@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Api - Rick and Morty</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img class="logo" src="https://www.freepnglogos.com/uploads/rick-and-morty-png/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png" alt="image logo " />
+  </header>
+  <main class="container">
+    
+    <form onsubmit="searchCharacters(event)" class="form">
+      <input type="text" name="buscar" id="input" placeholder="Digite o nome do personagem">
+      <button type="submit">Buscar</button>
+    </form onsubmit='searchCharacters()'>
+
+    <section class="list" id="list">
+      <!-- <div class="card">
+        <div class="card-header">
+          <p class="card-title">Rick</p>
+        </div>
+        <div class="card-img">
+          <img src="#" alt="" />
+        </div>
+        <div class="card-body">
+          <p><b>Gender:</b>Male</p>
+          <p><b>Species:</b>Human</p>
+          <p><b>Origin:</b>Terra</p>
+        </div>
+      </div> -->
+    </section>
+    <div class="buttons">
+      <button id="prev" onclick="prevPage()">prev</button>
+      <button id="next" onclick="nextPage()">Next</button>
+    </div>
+
+  </main>
+  <script src="main.js"></script>
+</body>
+</html>
